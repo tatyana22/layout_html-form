@@ -12,46 +12,54 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="fs">
+      <fieldset>
         <legend>
           Personal information
         </legend>
-        <label for="surname">Surname:
-          <input id="surname" type="text"
-            name="surname" required
+        <label>Surname:
+          <input type="text"
+            name="surname"
+            required
             autocomplete="off">
         </label>
-        <label for="name">Name:
-          <input id="name" type="text"
-            name="name" autocomplete="off"
+        <label>Name:
+          <input type="text"
+            name="name"
+            autocomplete="off"
             required>
         </label>
-        <label for="age">How old are You?:
-          <input id="age" type="number"
-            name="age" min="1"
-            max="100" value="12">
+        <label>How old are You?:
+          <input type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12">
         </label>
-        <label for="birth">Full date of birth:
-          <input id="birth" type="data"
-            name="birth" placeholder="mm/dd/yyyy">
+        <label>Full date of birth:
+          <input type="data"
+            name="birth"
+            placeholder="mm/dd/yyyy">
         </label>
-        <label for="terms">I accept the terms of the agreement
-          <input id="terms" type="checkbox"
-            name="terms" required>
+        <label>I accept the terms of the agreement
+          <input type="checkbox"
+            name="terms"
+            required>
         </label>
       </fieldset>
-      <fieldset class="fs">
+      <fieldset>
         <legend>
           Registration
         </legend>
-        <label for="e-mail">E-mail:
-          <input id="e-mail" type="email"
-            name="e-mail" placeholder="email@example.com"
+        <label>E-mail:
+          <input type="email"
+            name="e-mail"
+            placeholder="email@example.com"
             required>
         </label>
-        <label for="password">Password:
-          <input id="password" type="password"
-            name="password" required>
+        <label>Password:
+          <input type="password"
+            name="password"
+            required>
         </label>
       </fieldset>
       <fieldset class="fs">
@@ -59,19 +67,21 @@
           An interesting fact about you!
         </legend>
         <label>Do you love cats?
-          <input type="radio" name="cats"
-            value ="y">
+          <input type="radio"
+            name="cats"
+            value ="yes">
             Yes
-          <input type="radio" name="cats"
-            value ="n">
+          <input type="radio"
+            name="cats"
+            value ="no">
             No
         </label>
-        <label for="color">What is your favorite color?
-          <input id="color" type="color"
+        <label>What is your favorite color?
+          <input type="color"
             name="color">
         </label>
-        <label for="badtime">What time do you go to bad?
-          <input id="badtime" type="time"
+        <label>What time do you go to bad?
+          <input type="time"
             name="badtime">
         </label>
         <label>What are your favorite brand of cars?
@@ -82,23 +92,27 @@
           </select>
         </label>
         <label>How do you rate your work?
-          <input type="range" name="rate"
-            max="10" value="0"
+          <input type="range"
+            name="rate"
+            max="10"
+            value="0"
             min="0">
         </label>
       </fieldset>
-      <fieldset class="fs">
+      <fieldset>
         <legend>Additional info:</legend>
         <label>Comments:
-          <textarea name="comments" minlength="15"
+          <textarea name="comments"
+            minlength="15"
             maxlength="25">
           </textarea>
         </label>
         <label>Whoud you recommend us?
-          <select multiple size="1"
+          <select multiple
+            size="1"
             name="reccomends">
-            <option value="y">yes</option>
-            <option value="n">no</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
